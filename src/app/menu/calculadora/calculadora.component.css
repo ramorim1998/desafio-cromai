@@ -1,0 +1,26 @@
+.calcu-btn {
+    width: 100%;
+    margin: 5px;
+    
+  }
+  
+  .calcu-display-text {
+    margin-top: 3px;
+    width: 100%;
+  }
+  
+  .template-prc-20 {
+    padding: 20px;
+  }
+ .bg-color{
+   padding: 5%;
+   background-color: #7b8485;
+ }
+ p{
+  font-weight: bolder;
+  color: rgb(218, 214, 214);
+}
+label{
+  font-weight: bolder;
+  color: rgb(218, 214, 214);
+}
