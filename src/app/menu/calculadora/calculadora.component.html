@@ -3,11 +3,13 @@
         <div class="d-flex flex-col">
             <div class="col-xs-12">
                 <div class="img-rounded bg-color template-prc-20 rounded">
+                    <!--CAMPOS REFERENTES AO CALCULO DA HIPOTENUSA-->
                     <div>
                         <p>Calcule o valor da hipotenusa digitando os valores de dois catetos nos campos abaixo, em
                             seguida aperte o botão de '=' para receber o valor REAL da hipotenusa.</p>
                     </div>
                     <div class="row justify-content-around">
+                        <!--INPUT DO PRIMEIRO CATETO-->
                         <div class="col-3">
                             <label for="cateto1">Cateto 1</label>
                             <input type="string" class="form-control text-right calcu-display-text" id="cateto1"
@@ -16,15 +18,18 @@
                         <div class="col-1 plus-sign mt-4">
                             <span style="color: white;">+</span>
                         </div>
+                        <!--INPUT DO SEGUNDO CATETO-->
                         <div class="col-3">
                             <label for="cateto2">Cateto 2</label>
                             <input type="string" class="form-control text-right calcu-display-text" id="cateto2"
                                 name="cateto2" placeholder="0" [(ngModel)]="cateto2">
                         </div>
+                        <!-- BOTÃO QUE FAZ O CALCULO DA HIPOTENUSA-->
                         <div class="col-1 equal-sign mt-4 text-center">
                             <button (click)="calcularHipotenusa()" type="button" class="btn btn-success calcu-btn"
                                 id="btnCalcular">=</button>
                         </div>
+                        <!--OUTPUT VALOR DA HIPOTENUSA-->
                         <div class="col-3">
                             <label for="hipotenusaResult">Hipotenusa</label>
                             <input type="text" [value]="hipotenusaResult"
@@ -33,12 +38,16 @@
                         </div>
                     </div>
                     <br><br>
+                    <!--CAMPOS REFERENTES AO CALCULO DE UM DOS CATETOS-->
                     <div>
                         <p>Calcule o valor de um dos catetos digitando os valores de um cateto e da hipotenusa nos
                             campos abaixo, em seguida aperte o botão de '=' para receber o valor REAL do cateto
                             faltante.</p>
                     </div>
                     <div class="row justify-content-around">
+                        <!--INPUT VALOR HIPOTENUSA PARA CALCULO-->
+                        <!--para testes recomendo utilizar o valor da hipotenusa e de um dos catetos
+                             dos campos acima, claro que o calculo vai ocorrer mesmo que não seja-->
                         <div class="col-3">
                             <label for="hipotenusaCalc">Hipotenusa</label>
                             <input type="string" class="form-control text-right calcu-display-text" id="hipotenusaCalc"
@@ -47,15 +56,18 @@
                         <div class="col-1 plus-sign mt-4">
                             <span style="color: white;">-</span>
                         </div>
+                        <!--INPUT VALOR DE UM DOS CATETOS-->
                         <div class="col-3">
                             <label for="catetoy">Cateto y</label>
                             <input type="string" class="form-control text-right calcu-display-text" id="catetoy"
                                 name="catetoy" placeholder="0" [(ngModel)]="catetoy">
                         </div>
+                        <!--BOTAO QUE FAZ O CALCULO DO CATETO FALTANTE-->
                         <div class="col-1 equal-sign mt-4 text-center">
                             <button (click)="calcularCateto()" type="button" class="btn btn-success calcu-btn"
                                 id="btnCalcular">=</button>
                         </div>
+                        <!--OUTPUT VALOR CATETO FALTANTE-->
                         <div class="col-3">
                             <label for="catetox">Cateto x </label>
                             <input type="text" [value]="catetox" class="form-control text-right calcu-display-text"
